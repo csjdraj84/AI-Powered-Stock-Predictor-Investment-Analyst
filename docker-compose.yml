@@ -1,0 +1,11 @@
+services:
+  stock-analyst-app:
+    build: .
+    container_name: stock-analyst-container
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
