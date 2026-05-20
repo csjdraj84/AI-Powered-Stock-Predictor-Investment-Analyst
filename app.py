@@ -108,8 +108,8 @@ end_date_input = st.sidebar.date_input("End Date", end_date)
 # Model Parameters
 st.sidebar.subheader("Model Parameters")
 epochs = st.sidebar.slider("Epochs", 5, 50, 5)
-lookback = st.sidebar.slider("Lookback Days", 30, 90, 60)
-future_days = st.sidebar.slider("Predict Next N Days", 5, 30, 15)
+lookback = st.sidebar.slider("Lookback Days", 30, 120, 60)
+future_days = st.sidebar.slider("Predict Next N Days", 5, 90, 15)
 
 # Main App Logic
 if st.sidebar.button("Run Analysis"):
