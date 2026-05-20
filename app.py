@@ -17,6 +17,21 @@ st.set_page_config(page_title="AI Stock Predictor & Analyst", layout="wide")
 st.title("📈 AI-Powered Stock Price Prediction & Investment Analysis")
 st.markdown("### Using LSTM Neural Networks + Technical Indicators + Advanced Scoring")
 
+# Disclaimer
+st.warning(
+    """
+⚠️ **Important Disclaimer**
+
+By using this application, you acknowledge and agree that:
+
+- This application is for **educational and experimental purposes only**.
+- Financial markets involve **significant risk**. The predictions and information provided by this app are **not financial advice** and should not be used as the sole basis for any investment decision.
+- Always perform your own due diligence and consult with a **qualified financial advisor** before making any investment.
+- **Past performance is not indicative of future results.** No guarantee of accuracy or profitability is provided.
+- The developer of this application is **not liable** for any kind of losses, damages, or outcomes resulting from the use of this app.
+    """
+)
+
 # Sidebar
 st.sidebar.header("Prediction Settings")
 
